@@ -179,7 +179,7 @@ class Client
             }
 
             if (is_float($value)) {
-                $value = sprintf("%01.2f", $value);
+	            $value = number_format($value, 2, '.', '');
             }
         }
 
